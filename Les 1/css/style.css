@@ -1,0 +1,32 @@
+:root{
+    --main-color: blue;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    background: var(--main-color);
+    color: white;
+}
+
+button{
+    background: var(--main-color) ;
+    color: white;
+    margin-top: auto;
+}
+
+.card{
+    border: 2px solid var(--main-color);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+}
