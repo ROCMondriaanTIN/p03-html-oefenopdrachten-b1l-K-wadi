@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geavanceerd Formulier</title>
+    <link rel="stylesheet" href="/Les 2/css/style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <form>
+        <div class="form-group">
+          <label for="naam">Naam:</label>
+          <input type="text" id="naam" name="naam" placeholder="Jouw naam" />
+        </div>
+
+        <div class="form-group">
+          <label for="email">E-mail:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="voorbeeld@domein.com"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="bericht">Bericht:</label>
+          <textarea
+            id="bericht"
+            name="bericht"
+            rows="4"
+            placeholder="Jouw bericht"
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <p>Geslacht:</p>
+          <div class="radio-group">
+            <input type="radio" id="man" name="geslacht" value="man" />
+            <label for="man">Man</label>
+
+            <input type="radio" id="vrouw" name="geslacht" value="vrouw" />
+            <label for="vrouw">Vrouw</label>
+
+            <input type="radio" id="anders" name="geslacht" value="anders" />
+            <label for="anders">Anders</label>
+          </div>
+        </div>
+        <input type="submit" value="Verzenden" />
+      </form>
+    </div>
+  </body>
+</html>
