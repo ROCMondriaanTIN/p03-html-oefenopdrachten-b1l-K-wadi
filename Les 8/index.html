@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/Les 8/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form class="contact-form">
+        <div class="form-row">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="form-input"
+            required
+          />
+        </div>
+        <div class="form-row">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="form-input"
+            required
+          />
+        </div>
+        <div class="form-row">
+          <label for="description">Description:</label>
+          <textarea
+            id="description"
+            name="description"
+            class="form-input resizable"
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="submit-button">Send</button>
+      </form>
+      <div class="thank-you-message" style="display: none">
+        <p>Bedankt voor je bericht!</p>
+      </div>
+    </div>
+
+    <script src="/Les 8/js/main.js"></script>
+  </body>
+</html>
